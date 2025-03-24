@@ -1,4 +1,5 @@
-**Translation Management Service <br>
+# Translation Management Service <br>
+
 📌 Overview
 
 The Translation Management Service is a scalable API-driven solution designed to store and manage translations in multiple locales. It supports tagging translations, efficient searching, and exporting translations as JSON for frontend applications. The service follows PSR-12 standards, adheres to SOLID principles, and ensures high performance and security.
