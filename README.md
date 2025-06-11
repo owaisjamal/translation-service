@@ -1,10 +1,10 @@
 # Translation Management Service <br>
 
-📌 Overview
+## Overview
 
 The Translation Management Service is a scalable API-driven solution designed to store and manage translations in multiple locales. It supports tagging translations, efficient searching, and exporting translations as JSON for frontend applications. The service follows PSR-12 standards, adheres to SOLID principles, and ensures high performance and security.
 
-🚀 Features
+## Features
 
 ✔ Store translations in multiple locales (e.g., en, fr, es) <br>
 ✔ Tag translations for context (e.g., mobile, desktop, web) <br>
@@ -16,7 +16,7 @@ The Translation Management Service is a scalable API-driven solution designed to
 ✔ Docker setup for easy deployment <br>
 ✔ Test coverage <br>
 
-🛠 Installation Guide <br>
+## Installation Guide <br>
 
 1️⃣ Prerequisites
 
@@ -96,13 +96,13 @@ http://localhost:8000
 <br>
 
 7️⃣ API Authentication
-🔑 User Registration
+## User Registration
 
 curl -X POST "http://localhost:8000/api/register" \
      -H "Content-Type: application/json" \
      -d '{"name": "Test User", "email": "test@example.com", "password": "password", "password_confirmation": "password"}'
 
-🔐 User Login (Get Token)
+## User Login (Get Token)
 
 curl -X POST "http://localhost:8000/api/login" \
      -H "Content-Type: application/json" \
@@ -110,18 +110,18 @@ curl -X POST "http://localhost:8000/api/login" \
 
 This will return a Bearer token. Use this token in future API requests.
 
-🔓 User Logout
+## User Logout
 
 curl -X POST "http://localhost:8000/api/logout" \
      -H "Authorization: Bearer {TOKEN}"
 
 8️⃣ API Endpoints
 Method	Endpoint	Description	Auth Required <br>
-POST	/api/translations	Create a new translation	✅ <br>
-PUT	/api/translations/{id}	Update a translation	✅ <br>
-GET	/api/translations	Fetch translations (with filters)	✅ <br>
-GET	/api/export	Export translations as JSON	✅ <br>
-DELETE	/api/translations/{id}	Delete a translation	✅ <br>
+POST	/api/translations	Create a new translation	 <br>
+PUT	/api/translations/{id}	Update a translation	 <br>
+GET	/api/translations	Fetch translations (with filters)	 <br>
+GET	/api/export	Export translations as JSON	 <br>
+DELETE	/api/translations/{id}	Delete a translation	 <br>
 
 Example GET Request (with filters):
 
@@ -136,7 +136,7 @@ php artisan test
 
 
 
-🎯 Additional Features
+## Additional Features
 
 ✅ Dockerized Setup (Easier deployment) <br>
 ✅ High Performance & Scalability <br>
