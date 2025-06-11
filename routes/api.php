@@ -16,17 +16,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::middleware('auth:sanctum')->group(function () {
-//         Route::post('/translations', [TranslationController::class, 'store']);
-//         Route::put('/translations/{id}', [TranslationController::class, 'update']);
-//         Route::get('/translations', [TranslationController::class, 'index']);
-//         Route::get('/translations/export', [TranslationController::class, 'export']);
-// });
-
-// Route::get('/translations', [TranslationController::class, 'index']);
-// Route::get('/export-translations', [TranslationController::class, 'export']);
-
-
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 
@@ -39,12 +28,3 @@ Route::middleware(['auth:sanctum'])->group(function () {
 
     Route::post('/logout', [AuthController::class, 'logout']);
 });
-
-// Route::middleware('auth:sanctum')->group(function () {
-//     Route::post('/translations', [TranslationController::class, 'store']);
-//     Route::put('/translations/{id}', [TranslationController::class, 'update']);
-//     Route::get('/translations', [TranslationController::class, 'index']);
-//     Route::get('/translations/export', [TranslationController::class, 'export']);
-// });
-// Route::post('/register', [AuthController::class, 'register']);
-// Route::post('/login', [AuthController::class, 'login']);
