@@ -31,7 +31,7 @@ Step-by-Step Setup Guide
 
 1️⃣ Clone the Repository
 
-git clone https://github.com/owaisjamal/translation-service.git
+git clone https://github.com/owaisjamal/translation-service.git <br>
 cd translation-service
 
 2️⃣ Set Up Environment
